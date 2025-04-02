@@ -7,3 +7,8 @@ class Settings:
         self.FPS = 60
         # 2 7:11
         self.bg_file = Path.cwd() / 'Assets' / 'images' / 'Starbasesnow.png'
+
+        # Ship
+        self.ship_file = Path.cwd() / 'Assets' / 'images' / 'ship2(no bg).png'
+        self.ship_w = 40
+        self.ship_h = 60
