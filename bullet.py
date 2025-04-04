@@ -6,6 +6,7 @@ if TYPE_CHECKING:
     from alien_invasion import AlienInvasion
 
 class Bullet(Sprite):
+    """ A class representing each bullet sprite """
     def __init__(self, game: 'AlienInvasion'):
         super().__init__()
         self.game = game
@@ -16,14 +17,17 @@ class Bullet(Sprite):
         self.image = pygame.transform.scale(self.image, (
             self.settings.bullet_w, self.settings.bullet_h)
             )
+        self.image = pygame.transform.rotate(self.image, 90)
         
         self.rect = self.image.get_rect()
-        self.rect.midtop = game.ship.rect.midtop
-        self.y = float(self.rect.y)
+        self.rect.midleft = game.ship.rect.midleft
+        self.x = float(self.rect.x)
 
     def update(self):
-        self.y -= self.settings.bullet_speed
-        self.rect.y = self.y
+        """ Updates bullet movement """
+        self.x -= self.settings.bullet_speed
+        self.rect.x = self.x
 
     def draw_bullet(self) -> None:
+        """ Draws bullet on screen """
         self.screen.blit(self.image, self.rect)
