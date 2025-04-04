@@ -1,4 +1,10 @@
-
+""" 
+Lab12 Alien Invasion
+May Endo
+4/4/25
+This program recreates the classic Alien Invasion game using pygame.
+The ship is changed to move vertically using up and down arrow keys.
+"""
 import sys
 import pygame
 from settings import Settings
