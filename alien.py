@@ -3,16 +3,16 @@ from pygame.sprite import Sprite
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
-    from alien_invasion import AlienInvasion
+    from alien_fleet import AlienFleet
 
 class Alien(Sprite):
     """ A class representing each alien sprite """
-    def __init__(self, game: 'AlienInvasion', x: float, y: float) -> None:
+    def __init__(self, fleet: 'AlienFleet', y: float, x: float) -> None:
         super().__init__()
-        self.game = game
-        self.screen = game.screen
-        self.boundaries = game.screen.get_rect()
-        self.settings = game.settings
+
+        self.screen = fleet.game.screen
+        self.boundaries = fleet.game.screen.get_rect()
+        self.settings = fleet.game.settings
         
         self.image = pygame.image.load(self.settings.alien_file)
         self.image = pygame.transform.scale(self.image, (
@@ -21,8 +21,8 @@ class Alien(Sprite):
         self.image = pygame.transform.rotate(self.image, 90)
         
         self.rect = self.image.get_rect()
-        self.rect.x = x
         self.rect.y = y
+        self.rect.x = x
         
         self.y = float(self.rect.y)
         self.x = float(self.rect.x)
