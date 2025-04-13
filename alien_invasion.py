@@ -1,9 +1,11 @@
 """ 
-Lab12 Alien Invasion
+Lab13 Alien Invasion
 May Endo
-4/4/25
+4/13/25
 This program recreates the classic Alien Invasion game using pygame.
-The ship is changed to move vertically using up and down arrow keys.
+The ship is changed to move vertically using up and down arrow keys 
+and shoot left. Aliens close in towards to right, and players lose 
+lives when an alien hits the border or the ship.
 """
 import sys
 import pygame
@@ -11,14 +13,13 @@ from settings import Settings
 from game_stats import GameStats
 from ship import Ship
 from arsenal import Arsenal
-# from alien import Alien
 from alien_fleet import AlienFleet
 from time import sleep
 
 class AlienInvasion:
     """ The class representing the main game Alien Invasion """
     
-    def __init__(self):
+    def __init__(self) -> None:
         pygame.init()
         self.settings = Settings()
         self.game_stats = GameStats(self.settings.starting_ship_count)
@@ -47,7 +48,7 @@ class AlienInvasion:
 
         self.game_active = True
 
-    def run_game(self):
+    def run_game(self) -> None:
         """ Runs main game loop """
         while self.running:
             self._check_events()

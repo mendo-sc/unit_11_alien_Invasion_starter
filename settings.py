@@ -1,6 +1,7 @@
 from pathlib import Path
 class Settings:
-    def __init__(self):
+    def __init__(self) -> None:
+        # Game and window
         self.name: str = 'Alien Invasion'
         self.screen_w = 1200
         self.screen_h = 800

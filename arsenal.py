@@ -28,7 +28,7 @@ class Arsenal:
         for bullet in self.arsenal:
             bullet.draw_bullet()
 
-    def fire_bullet(self):
+    def fire_bullet(self) -> bool:
         """ Adds bullet to arsenal if within bullet_amount limit
 
         Returns:
