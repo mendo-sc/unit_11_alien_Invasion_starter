@@ -1,3 +1,7 @@
+""" 
+alien_fleet
+Defines the AlienFleet class
+"""
 import pygame
 from alien import Alien
 from typing import TYPE_CHECKING

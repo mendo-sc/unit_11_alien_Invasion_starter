@@ -1,3 +1,7 @@
+""" 
+arsenal
+Defines the arsenal class for all bullets
+"""
 import pygame
 from typing import TYPE_CHECKING
 from bullet import Bullet

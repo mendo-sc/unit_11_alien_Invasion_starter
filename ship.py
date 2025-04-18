@@ -1,3 +1,7 @@
+""" 
+ship
+Defines ship class for the player-controlled ship
+"""
 import pygame
 from typing import TYPE_CHECKING
 

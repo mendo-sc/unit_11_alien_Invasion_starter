@@ -1,11 +1,12 @@
 """ 
-Lab13 Alien Invasion
+Lab14 Alien Invasion
 May Endo
-4/13/25
+4/18/25
 This program recreates the classic Alien Invasion game using pygame.
 The ship is changed to move vertically using up and down arrow keys 
 and shoot left. Aliens close in towards to right, and players lose 
-lives when an alien hits the border or the ship.
+lives when an alien hits the border or the ship. The difficulty rises
+with each level. Hi-scores are kept between games.
 """
 import sys
 import pygame
@@ -87,6 +88,7 @@ class AlienInvasion:
             self.HUD.update_level()
 
     def _check_game_status(self) -> None:
+        """ Checks if enough life left """
         if self.game_stats.ships_left > 0:
             self.game_stats.ships_left -= 1
             self._reset_level()
@@ -95,11 +97,13 @@ class AlienInvasion:
             self.game_active = False
 
     def _reset_level(self) -> None:
+        """ Resets the level """
         self.ship.arsenal.arsenal.empty()
         self.alien_fleet.fleet.empty()
         self.alien_fleet.create_fleet()
     
     def restart_game(self) -> None:
+        """ Restarts the game """
         self.settings.initialize_dynamic_settings()
         self.game_stats.reset_stats()
         self.HUD.update_scores()
@@ -137,7 +141,8 @@ class AlienInvasion:
                 mouse_pos = pygame.mouse.get_pos()
                 self._check_button_clicked(mouse_pos)
 
-    def _check_button_clicked(self, mouse_pos):
+    def _check_button_clicked(self, mouse_pos) -> None:
+        """ Checks if play button is clicked """
         if self.play_button.check_clicked(mouse_pos):
             self.restart_game()
     

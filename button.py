@@ -1,3 +1,7 @@
+""" 
+button
+Defines the button class for the play button
+"""
 import pygame.font
 
 from typing import TYPE_CHECKING

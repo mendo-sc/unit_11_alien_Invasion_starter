@@ -1,4 +1,9 @@
-# from pathlib import Path
+""" 
+game_stats
+Defines the GameStats class for updating game scores and level.
+"""
+
+from pathlib import Path
 import json
 
 from typing import TYPE_CHECKING

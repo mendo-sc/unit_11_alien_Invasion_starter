@@ -1,3 +1,7 @@
+""""
+alien
+Defines the Alien class for each alien in the alien fleet
+"""
 import pygame
 from pygame.sprite import Sprite
 from typing import TYPE_CHECKING

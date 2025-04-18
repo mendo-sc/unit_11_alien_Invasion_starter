@@ -1,3 +1,7 @@
+""" 
+settings
+Defines settings class for all settings
+"""
 from pathlib import Path
 class Settings:
     def __init__(self) -> None:
