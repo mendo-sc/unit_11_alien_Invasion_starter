@@ -1,11 +1,7 @@
 """"
 alien
-<<<<<<< HEAD
 
 Defines the Alien class for each alien in the alien fleet, handles drawing the alien, and updating movement.
-=======
-Defines the Alien class for each alien in the alien fleet
->>>>>>> 33612cdc618c2043756f295e5819e186bf979f67
 """
 import pygame
 from pygame.sprite import Sprite

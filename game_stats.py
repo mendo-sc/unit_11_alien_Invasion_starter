@@ -1,14 +1,8 @@
 """ 
 game_stats
-<<<<<<< HEAD
 
 Defines the GameStats class for updating score, max score, hi-score, life count, and level.
 """
-=======
-Defines the GameStats class for updating game scores and level.
-"""
-
->>>>>>> 33612cdc618c2043756f295e5819e186bf979f67
 from pathlib import Path
 import json
 

@@ -1,11 +1,7 @@
 """ 
 button
-<<<<<<< HEAD
 
 Defines the button class for the play button.
-=======
-Defines the button class for the play button
->>>>>>> 33612cdc618c2043756f295e5819e186bf979f67
 """
 import pygame.font
 

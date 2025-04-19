@@ -1,12 +1,8 @@
 """ 
 settings
-<<<<<<< HEAD
 
 Defines settings class for all settings including the game screen, ship, bullet, alien, and button details.
 Also has dynamic settings for values that can change in the game.
-=======
-Defines settings class for all settings
->>>>>>> 33612cdc618c2043756f295e5819e186bf979f67
 """
 from pathlib import Path
 

@@ -1,11 +1,7 @@
 """ 
 arsenal
-<<<<<<< HEAD
 
 Defines the arsenal class for all bullets. Includes managing the number of available bullets and deleting them when passing the left boundary.
-=======
-Defines the arsenal class for all bullets
->>>>>>> 33612cdc618c2043756f295e5819e186bf979f67
 """
 import pygame
 from typing import TYPE_CHECKING

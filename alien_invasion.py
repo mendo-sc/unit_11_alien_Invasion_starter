@@ -1,15 +1,9 @@
 """ 
-<<<<<<< HEAD
 alien_invasion
 Lab 14 Alien Invasion
 May Endo
 4/18/25
 
-=======
-Lab14 Alien Invasion
-May Endo
-4/18/25
->>>>>>> 33612cdc618c2043756f295e5819e186bf979f67
 This program recreates the classic Alien Invasion game using pygame.
 The ship is changed to move vertically using up and down arrow keys 
 and shoot left. Aliens close in towards to right, and players lose 
