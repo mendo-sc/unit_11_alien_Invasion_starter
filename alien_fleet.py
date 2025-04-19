@@ -1,7 +1,11 @@
 """ 
 alien_fleet
+<<<<<<< HEAD
 
 Defines the AlienFleet class. It creates the fleet and manages movement for bouncing off the boundaries.
+=======
+Defines the AlienFleet class
+>>>>>>> 33612cdc618c2043756f295e5819e186bf979f67
 """
 import pygame
 from alien import Alien

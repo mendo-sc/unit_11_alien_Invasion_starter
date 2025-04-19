@@ -1,7 +1,11 @@
 """ 
 ship
+<<<<<<< HEAD
 
 Defines ship class for the player-controlled ship. Handles positioning, drawing, updating movements and firing, and getting hit.
+=======
+Defines ship class for the player-controlled ship
+>>>>>>> 33612cdc618c2043756f295e5819e186bf979f67
 """
 import pygame
 from typing import TYPE_CHECKING
