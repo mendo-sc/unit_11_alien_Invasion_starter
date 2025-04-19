@@ -1,3 +1,12 @@
+""" 
+arsenal
+<<<<<<< HEAD
+
+Defines the arsenal class for all bullets. Includes managing the number of available bullets and deleting them when passing the left boundary.
+=======
+Defines the arsenal class for all bullets
+>>>>>>> 33612cdc618c2043756f295e5819e186bf979f67
+"""
 import pygame
 from typing import TYPE_CHECKING
 from bullet import Bullet
@@ -7,7 +16,9 @@ if TYPE_CHECKING:
 
 class Arsenal:
     """ A class representing an arsenal group of all bullets """
-    def __init__(self, game: 'AlienInvasion'):
+
+    def __init__(self, game: 'AlienInvasion') -> None:
+        """ Initializes the arsenal """
         self.game = game
         self.settings = game.settings
         self.arsenal = pygame.sprite.Group()
@@ -17,7 +28,7 @@ class Arsenal:
         self.arsenal.update()
         self._remove_bullets_offscreen()
         
-    def _remove_bullets_offscreen(self):
+    def _remove_bullets_offscreen(self) -> None:
         """ Deletes bullets after passing the left boundary """
         for bullet in self.arsenal.copy():
             if bullet.rect.right <= 0:

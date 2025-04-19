@@ -1,3 +1,12 @@
+""" 
+bullet
+<<<<<<< HEAD
+
+Defines the bullet class for each bullet in arsenal. Handles 
+=======
+Defines the bullet class for each bullet in arsenal
+>>>>>>> 33612cdc618c2043756f295e5819e186bf979f67
+"""
 import pygame
 from pygame.sprite import Sprite
 from typing import TYPE_CHECKING
@@ -7,7 +16,13 @@ if TYPE_CHECKING:
 
 class Bullet(Sprite):
     """ A class representing each bullet sprite """
+
     def __init__(self, game: 'AlienInvasion'):
+        """ Initializes bullet with horizontal rotation
+
+        Args:
+            game (AlienInvasion): Instance of AlienInvasion
+        """
         super().__init__()
         self.game = game
         self.screen = game.screen

@@ -1,3 +1,12 @@
+""""
+alien
+<<<<<<< HEAD
+
+Defines the Alien class for each alien in the alien fleet, handles drawing the alien, and updating movement.
+=======
+Defines the Alien class for each alien in the alien fleet
+>>>>>>> 33612cdc618c2043756f295e5819e186bf979f67
+"""
 import pygame
 from pygame.sprite import Sprite
 from typing import TYPE_CHECKING
@@ -7,7 +16,9 @@ if TYPE_CHECKING:
 
 class Alien(Sprite):
     """ A class representing each alien sprite """
+
     def __init__(self, fleet: 'AlienFleet', y: float, x: float) -> None:
+        """ Initilizes an alien with an x and y location and horizontal rotation """
         super().__init__()
 
         self.fleet = fleet

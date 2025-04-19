@@ -1,3 +1,12 @@
+""" 
+ship
+<<<<<<< HEAD
+
+Defines ship class for the player-controlled ship. Handles positioning, drawing, updating movements and firing, and getting hit.
+=======
+Defines ship class for the player-controlled ship
+>>>>>>> 33612cdc618c2043756f295e5819e186bf979f67
+"""
 import pygame
 from typing import TYPE_CHECKING
 
@@ -9,6 +18,12 @@ class Ship:
     """ A class representing the spaceship """
 
     def __init__(self, game: 'AlienInvasion', arsenal: 'Arsenal') -> None:
+        """ Initializes the player ship with horizontal rotation
+
+        Args:
+            game (AlienInvasion): Instance of AlienInvasion
+            arsenal (Arsenal): Instance of Arsenal
+        """
         self.game = game
         self.settings = game.settings
         self.screen = game.screen
@@ -27,7 +42,7 @@ class Ship:
         self.arsenal = arsenal
 
     def _center_ship(self) -> None:
-        """ Moves ship to the center """
+        """ Moves ship to the center right """
         self.rect.midright = self.boundaries.midright
         self.y = float(self.rect.y)
     
@@ -60,7 +75,7 @@ class Ship:
         """
         return self.arsenal.fire_bullet()
 
-    def check_collisions(self, other_group) -> bool:
+    def check_collisions(self, other_group: any) -> bool:
         """ Check collisions between the ship and aliens
 
         Args:
